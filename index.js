@@ -1,9 +1,10 @@
 let userNum = 16;
 let container = document.querySelector("#container");
-container.style.width = '906px'
+container.style.width = '960px'
 container.style.height = '960px'
-const measurement = (904)/(userNum);
+
 function makeDivs() {
+        const measurement = (920 - (userNum * 4)) /(userNum);
         for (let i = 0; i < userNum; i++) {
             boxOfSq = document.createElement("div");
             boxOfSq.classList.add('boxOfSq');
