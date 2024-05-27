@@ -1,0 +1,22 @@
+#container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.boxOfSq {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.squares {
+    background-color: red;
+    margin: 1px;
+    flex: 1;
+    display: flex;
+}
