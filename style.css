@@ -12,6 +12,7 @@
 .boxOfSq {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .squares {
