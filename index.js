@@ -14,7 +14,12 @@ function makeDivs() {
                 squares.style.width = `${measurement}px`;
                 squares.classList.add('squares');
                 squares.addEventListener("mouseover", function (e) {
-                    e.currentTarget.style.backgroundColor = 'blue';
+                    redValue = Math.floor(Math.random() * 255);
+                    blueValue = Math.floor(Math.random() * 255);
+                    greenValue = Math.floor(Math.random() * 255);
+                   
+                    redGreenBlue = (`rgb(${redValue}, ${greenValue}, ${blueValue}`);
+                    e.currentTarget.style.backgroundColor = redGreenBlue;
                 }
             );
                 boxOfSq.appendChild(squares);}
@@ -30,6 +35,10 @@ console.log(squares);
 let resetBtn = document.querySelector("#resetBtn");
     resetBtn.addEventListener('click', (event) => {
         userNum = parseInt(prompt('Choose a number 1-100', '16'));
+            if (userNum> 100) {
+                alert('Maximum is 100');
+                userNum = 100
+            }
         while (container.firstChild) {
             container.firstChild.remove();
         }
