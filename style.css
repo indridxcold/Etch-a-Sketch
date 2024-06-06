@@ -16,8 +16,26 @@
 }
 
 .squares {
-    background-color: red;
-    margin: 1px;
+    background-color: white;
+    margin: 3px;
     flex: 1;
     display: flex;
+  
 }
+
+.mouseoverSquares {
+    opacity: currentOpac;
+}
+
+body {
+    background-color: black;
+}
+
+.bigBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
